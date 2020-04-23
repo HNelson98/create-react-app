@@ -7,6 +7,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
+import rootReducer from './store/reducers'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
